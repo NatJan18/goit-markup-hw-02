@@ -16,11 +16,18 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
+    line-height: 1.71;
 
 }
 
 ul {
     list-style: none;
+}
+
+.header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 /* Logo */
@@ -46,12 +53,6 @@ ul {
 
 /* Navigation */
 .site-nav .link {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
 
 }
 
@@ -65,14 +66,14 @@ ul {
 
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Contact */
 .auth-nav .link {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+    
 }
 
 .auth-nav .link:hover,
@@ -112,7 +113,7 @@ ul {
     background-color: var(--futer-bg-color);
 }
 
-.section.team {
+.team {
     background-color: var(--end-bg-color);
 }
 
@@ -144,38 +145,27 @@ ul {
 
 .team-name {
     color: var(--title-text-color);
-    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
 }
 
-.team-text {
+.team-text, .team-name{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-
 }
 
 /* Basemrnt */
 
 .address {
     font-style: normal;
-
-
 }
 
 .address-place {
     color: var(--primary-white-color);
-    text-decoration: none;
-
 }
 
 .address-contact {
     color: var(--secondary-whit-color);
-    text-decoration: none;
-
 }
 
 .address-contact:hover,
@@ -188,7 +178,7 @@ ul {
 
 /* Button  */
 
-.button {
+.button-primary {
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
     font-family: inherit;
@@ -202,28 +192,22 @@ ul {
     cursor: pointer;
 }
 
-.button.primary {
+.button-primary:hover,
+.button-primary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-
-}
-
-.button.secondary {
-    color: var(--accent-color);
-    background-color: var(--primary-white-color);
-
 }
 
 /* Portfolio page */
-.button.portfolio {
+.button-portfolio {
     background-color: var(--end-bg-color);
     font-weight: 500;
     line-height: 1.63;
     letter-spacing: 0.03em;
 }
 
-.button.portfolio:hover,
-.button.portfolio:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
