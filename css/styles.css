@@ -52,7 +52,8 @@ ul {
 }
 
 /* Navigation */
-.site-nav .link {
+.site-nav {
+    color: var(--title-text-color);
 
 }
 
@@ -162,10 +163,12 @@ ul {
 
 .address-place {
     color: var(--primary-white-color);
+    text-decoration: none;
 }
 
 .address-contact {
     color: var(--secondary-whit-color);
+    text-decoration: none;
 }
 
 .address-contact:hover,
@@ -179,8 +182,8 @@ ul {
 /* Button  */
 
 .button-primary {
-    color: var(--title-text-color);
-    background-color: var(--primary-white-color);
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -195,15 +198,20 @@ ul {
 .button-primary:hover,
 .button-primary:focus {
     color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    background-color: #188ce8;
 }
 
 /* Portfolio page */
 .button-portfolio {
+    color: #212121;
     background-color: var(--end-bg-color);
-    font-weight: 500;
-    line-height: 1.63;
     letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
 }
 
 .button-portfolio:hover,
